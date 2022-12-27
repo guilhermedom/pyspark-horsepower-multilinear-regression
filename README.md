@@ -8,7 +8,21 @@ PySpark for multiple linear regression on car horsepower using SMOTE for data au
 
 Multilinear regression is a linear regression using more than 1 independent variable to predict the dependent variable. In the context where multiple variables can be used to train a regressor, [feature selection] makes it possible to respect the [data characteristics assumed by linear regressors]: linear relationship between predictor and predicted variables, multivariate normality, homoscedasticity, no auto-correlation and no collinearity.
 
-Our objective is to build a regressor that is able to predict a car's horsepower given its characteristics. In the [dataset] used for this analysis, multiple features are available. Some of them have little to no correlation with the predicted variable "HP". Some features also have high correlation with each other, indicating the existence of collinearity. Nonetheless, the most harsh limitation of this dataset is its very small size. The 32 instances of our dataset have 1 predicted ("HP") and 10 predictor features related to common characteristics of a car.
+Our objective is to build a regressor that is able to predict a car's horsepower given its characteristics. In the [dataset] used for this analysis, multiple features are available. Some of them have little to no correlation with the predicted variable "HP". Some features also have high correlation with each other, indicating the existence of collinearity. Nonetheless, the most harsh limitation of this dataset is its very small size. The 32 instances of our dataset have 1 predicted ("HP") and 10 predictor features related to common characteristics of a car:
+
+| Attribute | Summary |
+|:---------:|:-------:|
+| MilesPerGallon | Number of miles the car can travel per US gallon. |
+| Cylinders | Number of cylinders in engine. |
+| Displacement | Cylinder volume swept by all of the pistons in cubic inches. |
+| RearAxleRatio | Rear axle ratio. |
+| Weight | Car weight (lb / 1000). |
+| QuarterMileTime | Time the car takes to make a quarter of a mile in seconds. |
+| VShapeOrStraightLine | If the cylinder configuration follows a V shape or a straight line. |
+| AutomaticOrManual | If transmission is automatic (= 0) or manual (= 1). |
+| Gears | Number of forward gears. |
+| Carburetor | Number of carburetors. |
+| HP | Gross car horsepower. |
 
 ## Analysis Introduction
 
